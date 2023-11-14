@@ -127,14 +127,100 @@
 
 //Function `calFahrenheit()` returns the converted Celsius value to Fahrenheit value based on the formula `(Celsius × 9/5) + 32 = Fahrenheit`
 
-function calFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32;
+// function calFahrenheit(celsius) {
+//   return (celsius * 9) / 5 + 32;
+// }
+
+// let result = calFahrenheit(0);
+// let result1 = calFahrenheit(20);
+// let result2 = calFahrenheit(40);
+
+// console.log(result);
+// console.log(result1);
+// console.log(result2);
+
+// 4. Write a function to find the area of a given Rectangle
+
+// Function `rectangleArea()` returns the rectangle area provided the width and height as the argument.
+// function rectangleArea(w, h) {
+//   return `The area of rectangle is ${w * h}`;
+// }
+
+// console.log(rectangleArea(15, 10));
+// console.log(rectangleArea(5, 10));
+
+// 5. Write a function to find the area and perimeter of a Circle
+
+// Function `circleValues()` returns the perimeter and area of the circle provided the radius as an argument for the function call.
+// 2*PI*Radius, and its area equals to PI*(Radius*2)
+
+// function circleValues(radius) {
+//   return `Parameter :${2 * Math.PI * radius}, Area : ${
+//     Math.PI * radius * radius
+//   }`;
+// }
+
+// console.log(circleValues(10));
+
+// 1. Create two variables, myAge and humanDogRatio
+let myAge = 42;
+let humanDogRatio = 7;
+
+// 2. Multiply the two together and store the result in myDogAge
+let myDogAge = myAge * humanDogRatio;
+
+// 3. Log myDogAge to the console
+// console.log(myDogAge);
+
+// Create a variable, bonusPoints. Initialize it as 50. Increase it to 100.
+// Decrease it down to 25, and then finally increase it to 70
+// Console.log the value after each step
+
+// let bonusPoints = 50;
+// bonusPoints = bonusPoints + 50;
+// console.log(bonusPoints);
+
+// bonusPoints = bonusPoints - 75;
+// console.log(bonusPoints);
+
+// bonusPoints = bonusPoints + 70;
+// console.log(bonusPoints);
+
+// Create two variables, name and greeting. The name variable should store your name,
+// and the greeting should store e.g. "Hi, my name is "
+
+// Create a third variable, myGreeting, that contatenates the two strings
+// Log myGreeting to the console
+
+// let name = "Sanusi";
+// let greeting = "Hi, my name is ";
+
+// let myGreeting = greeting + name;
+
+// // console.log(myGreeting);
+
+// console.log(4 + 5); //9
+// console.log("2" + "4"); //24
+// console.log("5" + 1); //51
+// console.log(100 + "100"); //100100
+
+// Create two variables, firstName and lastName
+let firstName = "Sanusi";
+let lastName = "Muhyideen";
+
+// Concatenate the two variables into a third variable called fullName
+
+let fullName = firstName + " " + lastName;
+
+// Log fullName to the console
+// console.log(fullName);
+
+let name = "Linda";
+let greeting = "Hi there";
+
+// Create a function that logs out "Hi there, Linda!" when called
+function greet() {
+  console.log(greeting + ", " + name + "!");
 }
 
-let result = calFahrenheit(0);
-let result1 = calFahrenheit(20);
-let result2 = calFahrenheit(40);
-
-console.log(result);
-console.log(result1);
-console.log(result2);
+// greet();
