@@ -163,11 +163,11 @@
 // console.log(circleValues(10));
 
 // 1. Create two variables, myAge and humanDogRatio
-let myAge = 42;
-let humanDogRatio = 7;
+// let myAge = 42;
+// let humanDogRatio = 7;
 
-// 2. Multiply the two together and store the result in myDogAge
-let myDogAge = myAge * humanDogRatio;
+// // 2. Multiply the two together and store the result in myDogAge
+// let myDogAge = myAge * humanDogRatio;
 
 // 3. Log myDogAge to the console
 // console.log(myDogAge);
@@ -204,23 +204,208 @@ let myDogAge = myAge * humanDogRatio;
 // console.log("5" + 1); //51
 // console.log(100 + "100"); //100100
 
-// Create two variables, firstName and lastName
-let firstName = "Sanusi";
-let lastName = "Muhyideen";
+// // Create two variables, firstName and lastName
+// let firstName = "Sanusi";
+// let lastName = "Muhyideen";
 
-// Concatenate the two variables into a third variable called fullName
+// // Concatenate the two variables into a third variable called fullName
 
-let fullName = firstName + " " + lastName;
+// let fullName = firstName + " " + lastName;
 
 // Log fullName to the console
 // console.log(fullName);
 
-let name = "Linda";
-let greeting = "Hi there";
+// let name = "Linda";
+// let greeting = "Hi there";
 
-// Create a function that logs out "Hi there, Linda!" when called
-function greet() {
-  console.log(greeting + ", " + name + "!");
-}
+// // Create a function that logs out "Hi there, Linda!" when called
+// function greet() {
+//   console.log(greeting + ", " + name + "!");
+// }
 
-// greet();
+// // greet();
+
+// let myPoints = 3;
+// console.log(" Intial point :" + myPoints);
+
+// Create two functions, add3Points() and remove1Point(), and have them
+// add/remove points to/from the myPoints variable
+
+// function add3Points() {
+//   myPoints = myPoints + 3;
+//   console.log("3 points Added : " + myPoints);
+// }
+// // add3Points();
+// // add3Points();
+// // add3Points();
+
+// function remove1Point() {
+//   myPoints = myPoints - 1;
+// }
+// remove1Point();
+// remove1Point();
+
+// Call the functions to that the line below logs out 10
+// console.log(myPoints);
+// console.log("1 point removed : " + myPoints);
+
+// When the user clicks the purchase button, render out
+// "Something went wrong, please try again" in the paragraph
+// that has the id="error".
+// let purchase = document.getElementById("btn");
+// // let errorDisplay = document.getElementById("error");
+// // console.log(purchase);
+
+// purchase.addEventListener("click", function () {
+//   console.log("Button Click");
+//   let errorDisplay = document.getElementById("error");
+//   errorDisplay.textContent = "Something went wrong, please try again";
+// });
+
+let num1 = 8;
+let num2 = 2;
+document.getElementById("num1-el").textContent = num1;
+document.getElementById("num2-el").textContent = num2;
+
+// Create four functions: add(), subtract(), divide(), multiply()
+// Call the correct function when the user clicks on one of the buttons
+// Perform the given calculation using num1 and num2
+// Render the result of the calculation in the paragraph with id="sum-el"
+
+// E.g. if the user clicks on the "Plus" button, you should render
+// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
+
+let add = document.getElementById("add-el");
+let subtract = document.getElementById("subtract-el");
+let divide = document.getElementById("divide-el");
+console.log(divide);
+let multiply = document.getElementById("multiply-el");
+console.log(multiply);
+let displayResult = document.getElementById("sum-el");
+console.log(displayResult);
+
+add.addEventListener("click", function () {
+  let addResult = num1 + num2;
+  console.log(addResult);
+  displayResult.textContent = "Sum : " + addResult;
+});
+
+subtract.addEventListener("click", function () {
+  let subtractResult = num1 - num2;
+  console.log(subtractResult);
+  displayResult.textContent = "Sum : " + subtractResult;
+});
+
+divide.addEventListener("click", function () {
+  let divideResult = num1 / num2;
+  console.log(divideResult);
+  displayResult.textContent = "Sum : " + divideResult;
+});
+
+multiply.addEventListener("click", function () {
+  let multiflyResult = num1 * num2;
+  console.log(multiflyResult);
+  displayResult.textContent = "Sum : " + multiflyResult;
+});
+
+// 1. Create two variables, firstCard and secondCard.
+// Set their values to a random number between 2-11
+
+// 2. Create a variable, sum, and set it to the sum of the two cards
+// let firstCard = 11;
+// let secondCard = 9;
+
+// let sum = firstCard + secondCard;
+// // console.log(sum);
+
+// if (sum < 21) {
+//   console.log("Do you want to draw a new card? 🙂");
+// } else if (sum === 21) {
+//   console.log("Wohoo! You've got Blackjack! 🥳");
+// } else {
+//   console.log("You're out of the game! 😭");
+// }
+// Check if the person is old enough to enter the nightclub (21)
+// Log a suitable message to the console in both cases
+
+// let age = 1;
+
+// if less than 21 -> "You can not enter the club!"
+// else            -> "Welcome!"
+
+// if (age < 21) {
+//   console.log("You can not enter the club!");
+// } else {
+//   console.log("Welcome! the door is open");
+// }
+
+// Check if the person is elegible for a birthday card from the King! (100)
+
+// let age = 100;
+
+// // if less than 100    -> "Not elegible"
+// // else if exactly 100 -> "Here is your birthday card from the King!"
+// // else                -> "Not elegible, you have already gotten one"
+// if (age < 100) {
+//   console.log("Not elegible");
+// } else if (age === 100) {
+//   console.log("Here is your birthday card from the King!");
+// } else {
+//   ("Not elegible, you have already gotten one");
+// }
+
+// Arrays - ordered lists of items
+
+// 0 indexed
+let featuredPosts = [
+  "Check out my Netflix clone",
+  "Here's the code for my project",
+  "I've just relaunched my portfolio",
+];
+
+let experience = [
+  "CEO at Scrimba",
+  "Frontend developer at Xeneta",
+  "People counter for Norstat",
+];
+
+let education = [
+  "Idea Islamic Nur and Primary School Kano",
+  "Goverment Secondary School stadium kano",
+  "Lagos city computer college Lagos",
+  "Lagos State University Lagos",
+];
+
+console.log(education[1]);
+
+// Make the following appear in the console:
+// Frontend developer at Xeneta
+// People counter for Norstat
+// CEO at Scrimba
+
+// Array - ordered list of items - coposite / complex data type
+
+// Create an array that describes yourself. Use the three primitive data types you've learned
+// It should contain your name (string), your age (number), and whether you like pizza (boolean)
+
+// let person = ["Sanusi", 42, true];
+// console.log(person[0]);
+// console.log(person[2]);
+// console.log(person[1]);
+
+let cards = [7, 4];
+cards.push(6);
+//console.log(cards)
+
+// Push the newMessage to the messages array, and then log out the array
+
+let messages = [
+  "Hey, how's it going?",
+  "I'm great, thank you! How about you?",
+  "All good. Been working on my portfolio lately.",
+];
+
+let newMessage = "Same here!";
+messages.push(newMessage);
+
+console.log(messages);
