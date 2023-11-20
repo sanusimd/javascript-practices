@@ -220,7 +220,7 @@
 
 // // Create a function that logs out "Hi there, Linda!" when called
 // function greet() {
-//   console.log(greeting + ", " + name + "!");
+// console.log(greeting + ", " + name + "!");
 // }
 
 // // greet();
@@ -393,8 +393,8 @@ console.log(education[1]);
 // console.log(person[2]);
 // console.log(person[1]);
 
-let cards = [7, 4];
-cards.push(6);
+// // let cards = [7, 4];
+// cards.push(6);
 //console.log(cards)
 
 // Push the newMessage to the messages array, and then log out the array
@@ -405,7 +405,161 @@ let messages = [
   "All good. Been working on my portfolio lately.",
 ];
 
-let newMessage = "Same here!";
-messages.push(newMessage);
+// for(messages = 0; messages < a)
+for (let i = 0; i < messages.length; i++) {
+  const element = messages[i];
+  console.log(element);
+}
 
-console.log(messages);
+// let newMessage = "Same here!";
+// messages.push(newMessage);
+
+// // console.log(messages);
+
+// let removeMessage = messages.pop();
+// console.log(removeMessage);
+// console.log(messages);
+
+// count 1 to 10
+// for (let count = 10; count < 101; count += 10) {
+//   console.log(count);
+// }
+
+let cards = [7, 3, 9];
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+
+for (i = 0; i < cards.length; i++) {
+  let element = cards[i];
+  console.log(element);
+}
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+let race1 = 20;
+let race2 = 50;
+
+function getTotalRaceTime() {
+  return race1 + race2;
+}
+
+let totalRace = getTotalRaceTime();
+
+// console.log(`Total Race is : ${totalRace}`);
+
+let randomNumber = Math.floor(Math.random() * 6) + 1;
+
+// console.log(randomNumber);
+
+// Create a function, rollDice(), that returns a random number between 1 and 6
+
+function rollDice() {
+  return randomNumber;
+}
+
+console.log(`Dice Is  : ${rollDice()}`);
+// Create two boolean variables, likesDocumentaries and likesStartups
+// Use an OR statement (||) to call recommendMovie() if either of those variables are true
+
+let likesDocumentaries = true;
+let likesStartups = true;
+
+if (likesDocumentaries === true || likesStartups === false) {
+  recommendMovie();
+} else {
+  console.log("Dont Like Any");
+}
+
+function recommendMovie() {
+  console.log("Hey, check out this new film we think you will like!");
+}
+// Create a person object that contains three keys: name, age, and country.
+// Use yourself as an example to set the values for name, age, and country
+
+let person = {
+  name: "Sanusi",
+  age: 42,
+  country: "Nigeria",
+};
+
+// Create a function, logData(), that uses the person object to create a
+function logData() {
+  return (
+    person.name +
+    " is " +
+    person.age +
+    " years old and lives in " +
+    person.country
+  );
+}
+
+// console.log(logData());
+// string in the following format:
+// "Per is 35 years old and lives in Norway"
+
+// Call the logData() function to verify that it works
+
+// less than 6 years old -> free
+// 6 to 17 years old     -> child discount
+// 18 to 26 years old    -> student discount
+// 27 to 66 years old    -> full price
+// over 66 years old     -> senior citizen discount
+
+// Create a conditional statement (if/else/else if) that logs out the discount
+// the passenger will get based upon the value of the age variable
+let age = 18;
+
+// if (age < 6) {
+//   console.log("Free Ticket");
+// } else if (age <= 17) {
+//   console.log("child discount Ticket");
+// } else if (age <= 26) {
+//   console.log("student discount Ticket");
+// } else if (age <= 66) {
+//   console.log("full price Ticket");
+// } else {
+//   console.log("senior citizen discount Ticket");
+// }
+
+// let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"];
+
+/* Use a for loop to log the following to the console:
+
+The 5 largest countries in the world:
+- China
+- India
+- United States
+- Indinesia
+- Pakistan
+*/
+// let heading = " The 5 largest countries in the world:";
+// console.log(heading);
+// for (let i = 0; i < largeCountries.length; i++) {
+//   console.log("- " + largeCountries[i]);
+// }
+
+let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+
+// You need to help me fixup the largeCountries array so that
+// China and Pakistan are added back into their respective places
+
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+console.log(largeCountries.pop());
+console.log(largeCountries.push("Pakistan"));
+console.log(largeCountries.shift());
+console.log(largeCountries.unshift("China"));
+console.log(largeCountries);
+
+let hands = ["rock", "paper", "scissor"];
+
+// Create a function that returns a random item from the array
+function getrandomItem() {
+  let randomItem = Math.floor(Math.random() * 3);
+  return hands[randomItem];
+}
+
+console.log(getrandomItem());
