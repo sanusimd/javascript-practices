@@ -552,7 +552,7 @@ console.log(largeCountries.pop());
 console.log(largeCountries.push("Pakistan"));
 console.log(largeCountries.shift());
 console.log(largeCountries.unshift("China"));
-console.log(largeCountries);
+// console.log(largeCountries);
 
 let hands = ["rock", "paper", "scissor"];
 
@@ -562,4 +562,39 @@ function getrandomItem() {
   return hands[randomItem];
 }
 
-console.log(getrandomItem());
+// console.log(getrandomItem());
+
+let fighters = [
+  "🐉",
+  "🐥",
+  "🐊",
+  "💩",
+  "🦍",
+  "🐢",
+  "🐩",
+  "🦭",
+  "🦀",
+  "🐝",
+  "🤖",
+  "🐘",
+  "🐸",
+  "🕷",
+  "🐆",
+  "🦕",
+  "🦁",
+];
+
+let stageEl = document.getElementById("stage");
+let fightButton = document.getElementById("fightButton");
+
+fightButton.addEventListener("click", function () {
+  let randomIndexOne = Math.floor(Math.random() * fighters.length);
+  let randomIndexTwo = Math.floor(Math.random() * fighters.length);
+
+  stageEl.textContent =
+    fighters[randomIndexOne] + "vs" + fighters[randomIndexTwo];
+
+  // Challenge:
+  // When the user clicks on the "Pick Fighters" button, pick two random
+  // emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
+});
